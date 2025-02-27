@@ -1,0 +1,13 @@
+ Polarizability Using mp2 aug-cc-pVTZ
+
+ Molecular Polarizability Tensor :
+
+                    5.3755       0.0546       0.0000
+                    0.0546       4.7893      -0.0000
+                    0.0000      -0.0000       4.4570
+
+ Polarizability Tensor Eigenvalues :
+
+                    4.4570       4.7842       5.3806
+
+ Interactive Molecular Polarizability :       4.8739

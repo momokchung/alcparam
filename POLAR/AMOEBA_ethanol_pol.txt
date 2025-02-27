@@ -1,0 +1,28 @@
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                        Version 8.11.3   June 2024                        ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2024               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Additive Molecular Polarizability :          6.4780
+
+ Molecular Polarizability Tensor :
+
+                    5.6817       0.1559       0.0000
+                    0.1559       4.6897      -0.0000
+                    0.0000       0.0000       4.4057
+
+ Polarizability Tensor Eigenvalues :
+
+                    4.4057       4.6657       5.7056
+
+ Interactive Molecular Polarizability :       4.9257

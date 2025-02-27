@@ -1,0 +1,39 @@
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            Tinker  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                        Version 8.11.3   June 2024                        ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2024               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Total Electric Charge :                 -0.00000 Electrons
+
+ Dipole Moment Magnitude :                  1.759 Debye
+
+ Dipole X,Y,Z-Components :                 -0.091       -1.757        0.000
+
+ Quadrupole Moment Tensor :                 2.287        3.113        0.000
+      (Buckinghams)                         3.113       -1.352        0.000
+                                            0.000        0.000       -0.935
+
+ Principal Axes Quadrupole :               -3.138       -0.935        4.073
+
+ Radius of Gyration :                       1.547 Angstroms
+
+ Center of Mass Coordinates :            0.000000    -0.000000    -0.000000
+ Euler Angles (Phi/Theta/Psi) :             0.000        0.000        0.000
+
+ Moments of Inertia and Principal Axes :
+
+             Moments (amu Ang^2)            X-, Y- and Z-Components of Axes
+
+                     14.302              1.000000    -0.000000     0.000000
+                     53.199              0.000000     1.000000     0.000000
+                     61.217             -0.000000    -0.000000     1.000000
