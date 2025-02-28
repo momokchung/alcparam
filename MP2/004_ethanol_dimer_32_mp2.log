@@ -1,0 +1,42 @@
+2025-02-27:17:31:38,806 INFO     [psi4.driver.task_planner:237] PLANNING MB:  mc_level_idx=0 packet={'driver': 'energy', 'method': 'mp2', 'basis': 'AUG-CC-PVTZ', 'keywords': {'SCF_TYPE': 'DF', 'function_kwargs': {}}}
+2025-02-27:17:31:38,806 INFO     [psi4.driver.driver_nbody:954] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  // ManyBody Setup: N-Body Levels [1, 2]//
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2025-02-27:17:31:38,806 INFO     [psi4.driver.driver_nbody:515]         Number of 1-body computations:     2
+        Number of 2-body computations:     1
+2025-02-27:17:31:38,807 INFO     [psi4.driver.driver_nbody:1016] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //       ManyBody Computations       //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2025-02-27:17:31:38,824 INFO     [psi4.driver.task_base:172] <<< JSON launch ... c1 82.1399808596586
+2025-02-27:17:31:40,344 INFO     [psi4.driver.task_planner:285] PLANNING Atomic:  keywords={'SCF_TYPE': 'DF', 'function_kwargs': {}}
+2025-02-27:17:31:40,346 INFO     [psi4.driver.driver:523] Compute energy(): method=mp2, basis=aug-cc-pvtz, molecule=dimer, nre=82.1399808596586
+2025-02-27:17:31:53,944 INFO     [psi4.driver.driver:526] Return energy(): -154.81184835399156
+2025-02-27:17:31:53,957 INFO     [psi4.driver.task_base:172] <<< JSON launch ... c1 82.16605555962344
+2025-02-27:17:31:53,979 INFO     [psi4.driver.task_planner:285] PLANNING Atomic:  keywords={'SCF_TYPE': 'DF', 'function_kwargs': {}}
+2025-02-27:17:31:53,981 INFO     [psi4.driver.driver:523] Compute energy(): method=mp2, basis=aug-cc-pvtz, molecule=dimer, nre=82.16605555962344
+2025-02-27:17:32:08,220 INFO     [psi4.driver.driver:526] Return energy(): -154.8123540168188
+2025-02-27:17:32:08,233 INFO     [psi4.driver.task_base:172] <<< JSON launch ... c1 257.55103385617224
+2025-02-27:17:32:08,258 INFO     [psi4.driver.task_planner:285] PLANNING Atomic:  keywords={'SCF_TYPE': 'DF', 'function_kwargs': {}}
+2025-02-27:17:32:08,260 INFO     [psi4.driver.driver:523] Compute energy(): method=mp2, basis=aug-cc-pvtz, molecule=dimer, nre=257.55103385617224
+2025-02-27:17:32:25,575 INFO     [psi4.driver.driver:526] Return energy(): -309.62814540217795
+2025-02-27:17:32:25,588 INFO     [psi4.driver.driver_nbody:1366] 
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+  //          ManyBody Results         //
+  //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<//
+
+
+2025-02-27:17:32:25,588 INFO     [psi4.driver.driver_nbody:396] 
+   ==> N-Body: Counterpoise Corrected (CP) energies <==
+
+        n-Body     Total Energy            Interaction Energy                          N-body Contribution to Interaction Energy
+                   [Eh]                    [Eh]                  [kcal/mol]            [Eh]                  [kcal/mol]
+             1  N/A                         0.000000000000        0.000000000000        0.000000000000        0.000000000000
+  FULL/RTN   2  N/A                        -0.003943031368       -2.474289538543       -0.003943031368       -2.474289538543
+
+
