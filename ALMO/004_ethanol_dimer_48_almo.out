@@ -1,0 +1,529 @@
+
+Running Job 1 of 1 004_ethanol_dimer_48_almo.inp
+qchem 004_ethanol_dimer_48_almo.inp_147508.0 /scratch/qchem147508/ 6
+/home/kchung25/qchem/5.4.0/exe/qcprog.exe_s 004_ethanol_dimer_48_almo.inp_147508.0 /scratch/qchem147508/
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4, Q-Chem, Inc., Pleasanton, CA (2021)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  D. Barton,  K. Begam,  A. Behn,  
+ Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  K. Carter-Fenk,  
+ Romit Chakraborty,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  
+ S. Dasgupta,  Jia Deng,  M. de Wergifosse,  M. Diedenhofen,  Hainam Do,  
+ S. Ehlert,  Po-Tung Fang,  S. Fatehi,  Qingguo Feng,  T. Friedhoff,  
+ J. Gayvert,  Qinghui Ge,  G. Gidofalvi,  M. Goldey,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  M. W. D. Hanson-Heine,  
+ P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  M. Hernandez Vera,  
+ M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  Kerwin Hui,  
+ B. C. Huynh,  M. Ivanov,  Hyunjun Ji,  Hanjie Jiang,  B. Kaduk,  S. Kaehler,  
+ K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  
+ K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  
+ S. Lehtola,  Rain Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  
+ M. Loipersberger,  A. Luenser,  A. Manjanath,  P. Manohar,  E. Mansoor,  
+ S. F. Manzer,  Shan-Ping Mao,  A. V. Marenich,  T. Markovich,  S. Mason,  
+ S. A. Maurer,  P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  
+ S. A. Mewes,  P. Morgante,  J. W. Mullinax,  K. J. Oosterbaan,  G. Paran,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ N. Sergueev,  S. M. Sharada,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Yu-Chuan Su,  E. J. Sundstrom,  Zhen Tao,  J. Thirman,  T. Tsuchimochi,  
+ N. M. Tubman,  S. P. Veccham,  O. Vydrov,  J. Wenzel,  J. Witte,  A. Yamada,  
+ Kun Yao,  S. Yeganeh,  S. R. Yost,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  
+ K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  T. Neudecker,  
+ C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Yihan Shao,  
+ L. V. Slipchenko,  R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  
+ A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  T. A. Wesolowski,  
+ K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  S. Faraji,  
+ P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Additional authors since Version 5.4.0: 
+ Chandrima Chakravarty,  L. Cunha,  R. Kang,  Yongbin Kim,  S. Kotaru,  
+ Shaozhi Li,  Xiangyuan Li,  F. Matz,  A. Molle,  V. Parravicini,  
+ Haisheng Ren,  Hengyuan Shen,  Yingli Su,  Hung-Yi Tsai,  C. Utku,  
+ Fang Wang,  Jeff Yang,  F. Zeller
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 5.4.2 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Feb 28 19:45:09 2025  
+
+ Host: 
+0
+
+     Scratch files written to /scratch/qchem147508//
+ Dec1321 |scratch|qcdevops|jenkins|workspace|build_RNUM 5684   
+ Processing $rem in /home/kchung25/qchem/5.4.0/config/preferences:
+ Processing $rem in /home/kchung25/.qchemrc:
+
+ Q-Chem warning in module libgen/rem_setup.C, line 3079:
+
+ Neither GIA nor STOLL is specified by user. Use STOLL as the default
+
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 1
+--
+0 1
+C   -1.293433   0.977734   0.582155
+C   -1.697697  -0.119261  -0.369663
+O   -3.004856  -0.591736  -0.138850
+H   -3.604335   0.157887  -0.173882
+H   -0.261743   1.295688   0.406944
+H   -1.383760   0.637179   1.616441
+H   -1.937873   1.853832   0.459971
+H   -1.042307  -0.988013  -0.249493
+H   -1.579452   0.220487  -1.409929
+--
+0 1
+C    1.810897  -1.169369   0.598404
+C    1.982063  -0.248703  -0.583258
+O    2.118234   1.102081  -0.201091
+H    2.852989   1.171537   0.413824
+H    1.654232  -2.200924   0.275950
+H    0.953609  -0.862743   1.202615
+H    2.697885  -1.153732   1.238767
+H    1.098806  -0.286698  -1.228218
+H    2.833951  -0.569664  -1.199291
+$end
+
+$rem
+JOBTYPE          eda
+EDA2             1
+METHOD           wB97M-V
+BASIS            def2-TZVPPD
+SYMMETRY         false
+MEM_TOTAL        50000
+MEM_STATIC       10000
+THRESH           14
+SCF_CONVERGENCE  8
+XC_GRID          000099000590
+NL_GRID          1
+EDA_CLS_DISP     true
+FD_MAT_VEC_PROD  FALSE
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      C       1.2934330944    -0.9777338883     0.5821551888
+    2      C       1.6976971400     0.1192610487    -0.3696628645
+    3      O       3.0048561123     0.5917360956    -0.1388498038
+    4      H       3.6043351318    -0.1578868935    -0.1738817027
+    5      H       0.2617431145    -1.2956879248     0.4069441367
+    6      H       1.3837600104    -0.6371788079     1.6164411696
+    7      H       1.9378731232    -1.8538318831     0.4599713027
+    8      H       1.0423071115     0.9880130430    -0.2494929787
+    9      H       1.5794522244    -0.2204870328    -1.4099288475
+   10      C      -1.8108969551     1.1693690430     0.5984037970
+   11      C      -1.9820628472     0.2487029496    -0.5832581459
+   12      O      -2.1182338449    -1.1020810245    -0.2010910537
+   13      H      -2.8529888888    -1.1715369944     0.4138238974
+   14      H      -1.6542319546     2.2009240221     0.2759497304
+   15      H      -0.9536089928     0.8627431081     1.2026148835
+   16      H      -2.6978850020     1.1537320715     1.2387667327
+   17      H      -1.0988058004     0.2866979207    -1.2282180836
+   18      H      -2.8339508089     0.5696638838    -1.1992912331
+ ----------------------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =         250.87399388 hartrees
+ There are       26 alpha and       26 beta electrons
+ Requested basis set is def2-TZVPPD
+ There are 164 shells and 432 basis functions
+
+ Q-Chem warning in module libmdc/get_mega.C, line 171:
+
+ Allowed MEM_STATIC has been capped at MEM_STATIC=8191.
+ Reduce the value of MEM_STATIC to silence this warning.
+
+
+ Total QAlloc Memory Limit  50000 MB
+ Mega-Array Size      8007 MB
+ MEM_STATIC part      8191 MB
+ A cutoff of  1.0D-14 yielded  12464 shell pairs
+ There are     85810 function pairs (    105482 Cartesian)
+ Smallest overlap matrix eigenvalue = 6.45E-06
+
+ Scale SEOQF with 1.000000e-01/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000092 hartrees
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+================================================================
+                 ALMO-EDA with the EDA2 driver                  
+================================================================
+ The second-generation ALMO-EDA (for DFT):                      
+ P. R. Horn, Y. Mao and M. Head-Gordon, PCCP, 18, 23067 (2016)  
+ Y. Mao et al. Annu. Rev. Phys. Chem. 72, 641 (2021)            
+ Decomposition of the frozen energy:                            
+ P. R. Horn, Y. Mao and M. Head-Gordon, JCP, 144, 114107 (2016) 
+ FERF model for polarization:                                   
+ P. R. Horn and M. Head-Gordon, JCP, 143, 114111 (2015)         
+================================================================
+ Using eda2 option set 1
+ Option set summary: Frozen orbital wavefunction, initial wavefunction decomposition, and nDQ polarization.
+--------------------------------
+Printing EDA Options
+--------------------------------
+eda_child_super_basis      0
+fragmo_guess_mode          0
+child_mp                   1
+child_mp_orders            232
+cls_elec                   1
+cls_disp                   1
+scfmi_mode                 1
+scfmi_occs                 0
+scfmi_virts                0
+frz_relax                  0
+frz_relax_method           0
+dc_pen_start               0
+dc_pen_conv                0
+dc_pen_increment           0
+dc_pen_steps               0
+dc_pen_thresh_factor       0
+dc_pen_pre_newton_thresh   0
+frz_ortho_decomp           1
+frz_ortho_decomp_conv      6
+plot_mo_ortho_frz          0
+frgm_method                2
+scfmi_freeze_ss            0
+separate_rehyb             0
+plot_diff_den              0
+eda_nocv                   0
+eda_vct_relax              1
+disp_free_x                0
+disp_free_c                0
+eda_bsse                   0
+eda_pct_a                  0
+eda_covp                   0
+--------------------------------
+Attempting to make child job directory: /scratch/qchem147508//Frg1/
+Attempting to make child job directory: /scratch/qchem147508//Frg2/
+Creating input file /scratch/qchem147508/Frg1.input
+using default PutDataFrgm: nothing
+calling putenv with: QCSCRATCH=/scratch/qchem147508/ 
+Spawning Job For Fragment 0
+Done Job For Fragment 0
+calling putenv with: QCSCRATCH=/scratch 
+calling putenv with: QCTHREADS=6 
+Creating input file /scratch/qchem147508/Frg2.input
+using default PutDataFrgm: nothing
+calling putenv with: QCSCRATCH=/scratch/qchem147508/ 
+Spawning Job For Fragment 1
+Done Job For Fragment 1
+calling putenv with: QCSCRATCH=/scratch 
+calling putenv with: QCTHREADS=6 
+Doing General SCFMI
+ Exchange:     0.1500 Hartree-Fock + 1.0000 wB97M-V + LR-HF
+ Correlation:  1.0000 wB97M-V
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Nonlocal Correlation:  VV10 with C = 0.0100 and b = 6.00 and scale = 1.00000
+ Grid used for NLC:  SG-1 standard quadrature
+performing fock build before subrot guess so that all methods have access
+Printing subrot_rss_gen Method Specification:
+Occupied Subspace Method is 0
+Virtual Subspace Method is 0
+Energy of the unrelaxed supersystem initial determinant -310.060480830913
+write pseudocanon occs and virts to disk
+write pseudocanon orbital energies to disk
+Tolerance of ortho_decomp_scf: 1.00e-06
+GDM subspace size: 20
+Beginning the Orthogonal Decomposition of the Initial Supersystem Wavefunction
+    1    -310.0365496815      5.65e-02     ortho_decomp Preconditoned Steepest Descent
+    2    -310.0398351309      1.58e-03     ortho_decomp BFGS Step
+    3    -310.0398488567      1.24e-04     ortho_decomp BFGS Step
+    4    -310.0398488764      4.82e-06     ortho_decomp BFGS Step
+    5    -310.0398488765      1.65e-07     ortho_decomp 00000 Convergence criterion met
+ Hartree-Fock
+ Hartree-Fock
+ Hartree-Fock
+ Exchange:     0.1500 Hartree-Fock + 1.0000 wB97M-V + LR-HF
+ Correlation:  1.0000 wB97M-V
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Nonlocal Correlation:  VV10 with C = 0.0100 and b = 6.00 and scale = 1.00000
+ Grid used for NLC:  SG-1 standard quadrature
+ Long-range K will be added via erf
+ Coulomb attenuation parameter = 0.3 bohr**(-1)
+ Nonlocal correlation = 2.040340448116e-01
+Doing General SCFMI
+ Exchange:     0.1500 Hartree-Fock + 1.0000 wB97M-V + LR-HF
+ Correlation:  1.0000 wB97M-V
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Nonlocal Correlation:  VV10 with C = 0.0100 and b = 6.00 and scale = 1.00000
+ Grid used for NLC:  SG-1 standard quadrature
+performing fock build at end of subrot_r(subrot) constructor so that all methods have access
+<S^2> of initial wavefunction before polarization iterations 0.0000000000
+Beginning iterations for the determination of the polarized wavefunction
+Energy prior to optimization (guess energy) = -310.060480830913
+Begin Timing: Total SCF Calculation
+begin iterations for algorithm: DIIS         
+the SCF tolerance is set to 1.00e-08
+    1    -310.0604808309      1.41e-04     00000 
+    2    -310.0610872897      4.62e-05     00000 
+    3    -310.0611343995      2.61e-05     00000 
+    4    -310.0611449972      1.07e-05     00000 
+    5    -310.0611470107      3.68e-06     00000 
+    6    -310.0611475067      1.52e-06     00000 
+    7    -310.0611475895      6.84e-07     00000 
+    8    -310.0611476040      2.30e-07     00000 
+    9    -310.0611476051      9.60e-08     00000 
+   10    -310.0611476052      5.86e-08     00000 
+   11    -310.0611476052      2.35e-08     00000 
+   12    -310.0611476052      8.40e-09     00000 Convergence criterion met
+write pseudocanon occs and virts to disk
+write pseudocanon orbital energies to disk
+Timing for Total SCF: 294.00s (wall), 1762.06s (cpu)
+<S^2> of polarized wavefunction after polarization iterations 0.0000000000
+relaxing scfmi constraint to allow all rotations in the entire AO span
+Doing General SCFMI
+ Exchange:     0.1500 Hartree-Fock + 1.0000 wB97M-V + LR-HF
+ Correlation:  1.0000 wB97M-V
+ Using Euler-Maclaurin-Lebedev (99,590) quadrature formula
+ Nonlocal Correlation:  VV10 with C = 0.0100 and b = 6.00 and scale = 1.00000
+ Grid used for NLC:  SG-1 standard quadrature
+performing fock build at end of subrot_r(subrot) constructor so that all methods have access
+<S^2> of polarized wavefunction before ct-allowed iterations 0.0000000000
+Beginning iterations for the determination of the CT-Allowed wavefunction
+Energy prior to optimization (guess energy) = -310.061147605231
+Begin Timing: Total SCF Calculation
+begin iterations for algorithm: DIIS         
+the SCF tolerance is set to 1.00e-08
+    1    -310.0611476052      9.60e-05     00000 
+    2    -310.0620933912      1.14e-05     00000 
+    3    -310.0621217036      2.68e-06     00000 
+    4    -310.0621223609      2.20e-06     00000 
+    5    -310.0621226837      2.86e-07     00000 
+    6    -310.0621226914      9.51e-08     00000 
+    7    -310.0621226926      2.33e-08     00000 
+    8    -310.0621226926      5.42e-09     00000 Convergence criterion met
+write pseudocanon occs and virts to disk
+write pseudocanon orbital energies to disk
+Timing for Total SCF: 188.00s (wall), 1126.99s (cpu)
+<S^2> of ct_allowed wavefunction after ct-allowed iterations 0.0000000000
+
+================================
+        Results of EDA2         
+================================
+Basic EDA Quantities
+--------------------
+Fragment Energies (Ha):
+1 -155.0293645030
+2 -155.0294195557
+--------------------
+  E_prp (kJ/mol) = 0.0000
+  E_frz (kJ/mol) = -4.4549
+  E_pol (kJ/mol) = -1.7506
+  E_vct (kJ/mol) = -2.5601
+  E_int (kJ/mol) = -8.7657
+--------------------
+
+
+Decomposition of frozen interaction energy
+--------------------
+  --------------------
+  Orthogonal Frozen Decomposition:
+  --------------------
+     E_elec   (ELEC)   (kJ/mol) = -26.7078
+     E_pauli  (PAULI)  (kJ/mol) = 37.9515
+     E_disp   (DISP)   (kJ/mol) = -15.6987
+  --------------------
+  Classical Frozen Decomposition:
+  --------------------
+     E_cls_elec  (CLS ELEC)  (kJ/mol) = -10.9757
+     E_mod_pauli (MOD PAULI) (kJ/mol) = 20.4587 (FRZ - CLS ELEC - CLS DISP)
+     E_cls_disp  (CLS DISP)  (kJ/mol) = -13.9379
+  --------------------
+--------------------
+
+Simplified EDA Summary (kJ/mol)
+--------------------
+ PREPARATION      0.0000
+ FROZEN           -4.4549 (ELEC + PAULI + DISP)
+[ELEC + PAULI = 9.4830, DISP = -13.9379]
+ POLARIZATION    -1.7506
+ CHARGE TRANSFER -2.5601
+ TOTAL           -8.7657     (PRP + FRZ + POL + CT)
+--------------------
+ 
+ --------------------------------------------------------------
+ 
+                    Orbital Energies (a.u.)
+ --------------------------------------------------------------
+ 
+ Alpha MOs
+ -- Occupied --
+-19.3374 -19.3271 -10.3915 -10.3823 -10.3377 -10.3243  -1.1595  -1.1494
+ -0.8781  -0.8652  -0.7483  -0.7373  -0.6212  -0.6095  -0.5751  -0.5575
+ -0.5476  -0.5399  -0.4912  -0.4807  -0.4764  -0.4656  -0.4336  -0.4239
+ -0.3868  -0.3761
+ -- Virtual --
+  0.0327   0.0436   0.0544   0.0564   0.0733   0.0803   0.0885   0.1029
+  0.1077   0.1175   0.1221   0.1305   0.1453   0.1500   0.1560   0.1640
+  0.1740   0.1793   0.1840   0.1993   0.2067   0.2151   0.2174   0.2248
+  0.2298   0.2463   0.2486   0.2510   0.2596   0.2682   0.2820   0.2847
+  0.2923   0.3003   0.3012   0.3075   0.3101   0.3116   0.3174   0.3226
+  0.3248   0.3321   0.3348   0.3403   0.3452   0.3491   0.3519   0.3628
+  0.3682   0.3709   0.3735   0.3820   0.3886   0.3971   0.4035   0.4143
+  0.4183   0.4210   0.4283   0.4305   0.4447   0.4515   0.4551   0.4568
+  0.4653   0.4729   0.4792   0.4912   0.4926   0.4945   0.5109   0.5187
+  0.5206   0.5236   0.5303   0.5420   0.5452   0.5556   0.5589   0.5648
+  0.5737   0.5846   0.5929   0.6024   0.6117   0.6167   0.6311   0.6409
+  0.6486   0.6582   0.6623   0.6682   0.6715   0.6789   0.6973   0.7075
+  0.7178   0.7193   0.7287   0.7387   0.7456   0.7533   0.7635   0.7651
+  0.7760   0.7848   0.7902   0.7974   0.8104   0.8133   0.8216   0.8270
+  0.8443   0.8496   0.8763   0.8897   0.9031   0.9071   0.9300   0.9414
+  0.9480   0.9655   0.9814   0.9909   1.0065   1.0136   1.0240   1.0412
+  1.0426   1.0505   1.0642   1.0908   1.1079   1.1314   1.1463   1.1639
+  1.1725   1.1743   1.1919   1.2096   1.2149   1.2322   1.2372   1.2524
+  1.2658   1.2778   1.2969   1.3107   1.3205   1.3405   1.3491   1.3582
+  1.3723   1.3773   1.3927   1.4049   1.4169   1.4203   1.4252   1.4517
+  1.4728   1.4805   1.4903   1.5074   1.5227   1.5298   1.5422   1.5486
+  1.5848   1.6087   1.6208   1.6358   1.6461   1.6665   1.6828   1.6918
+  1.6989   1.7108   1.7402   1.7526   1.7773   1.7851   1.7962   1.8143
+  1.8360   1.8481   1.9563   1.9810   1.9946   2.0280   2.0338   2.0599
+  2.0810   2.0916   2.1232   2.1327   2.1870   2.1954   2.2191   2.2481
+  2.2712   2.2993   2.3539   2.3641   2.3965   2.4033   2.4566   2.4700
+  2.4909   2.5235   2.6956   2.7064   2.7435   2.7782   2.7949   2.8115
+  2.8376   2.8747   2.8841   2.8946   2.9094   2.9195   2.9262   2.9353
+  2.9519   2.9560   2.9725   2.9909   3.0057   3.0238   3.0447   3.0524
+  3.0633   3.0841   3.0898   3.0959   3.1071   3.1259   3.1479   3.1676
+  3.1808   3.2017   3.2323   3.2414   3.2629   3.2731   3.2892   3.3000
+  3.3040   3.3148   3.3165   3.3369   3.3505   3.3617   3.3757   3.3915
+  3.4417   3.4555   3.4610   3.4725   3.4820   3.5023   3.5284   3.5597
+  3.5895   3.5969   3.6084   3.6145   3.6319   3.6519   3.6762   3.6777
+  3.7125   3.7153   3.7341   3.7515   3.7728   3.7868   3.7961   3.8085
+  3.8263   3.8327   3.8614   3.8801   3.9173   3.9346   3.9912   3.9991
+  4.0086   4.0209   4.0399   4.0498   4.0551   4.0781   4.0914   4.1017
+  4.1185   4.1371   4.1453   4.1595   4.1835   4.1921   4.2186   4.2263
+  4.2444   4.2594   4.2621   4.2804   4.2944   4.2985   4.3131   4.3208
+  4.3399   4.3559   4.3823   4.4138   4.4201   4.4413   4.4693   4.4746
+  4.4882   4.5030   4.5114   4.5391   4.5462   4.5635   4.6097   4.6692
+  4.6842   4.6957   4.7075   4.7199   4.7421   4.7549   4.8050   4.8160
+  4.8280   4.8369   4.9400   4.9633   4.9696   4.9824   4.9969   5.0099
+  5.0495   5.0574   5.0831   5.0902   5.1429   5.1544   5.2226   5.2267
+  5.2925   5.3115   5.3358   5.3424   5.4110   5.4239   5.4261   5.4295
+  5.4463   5.4512   5.4864   5.4919   5.5134   5.5751   5.5887   5.6052
+  5.6268   5.6543   5.6744   5.6931   5.7267   5.7417   5.7456   5.7945
+  5.8146   5.8445   5.8946   5.9126   6.1144   6.1227   6.2888   6.3049
+  6.6614   6.6699   6.8223   6.8321   6.8888   6.8990   6.9845   6.9896
+  7.0716   7.0966   7.3700   7.3771   7.5547   7.5592   7.7766   7.7829
+ 23.7587  23.7982  24.0727  24.0970  44.7591  44.8337
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 C                    -0.860152
+      2 C                    -0.003158
+      3 O                    -0.413492
+      4 H                     0.135536
+      5 H                     0.157387
+      6 H                     0.250660
+      7 H                     0.369272
+      8 H                     0.103642
+      9 H                     0.259436
+     10 C                    -0.928889
+     11 C                    -0.169452
+     12 O                    -0.374099
+     13 H                     0.131568
+     14 H                     0.255962
+     15 H                     0.228578
+     16 H                     0.355948
+     17 H                     0.178708
+     18 H                     0.322544
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X      -1.6505      Y      -0.3537      Z       0.3835
+       Tot       1.7310
+    Quadrupole Moments (Debye-Ang)
+        XX     -36.4900     XY      -7.2603     YY     -43.1924
+        XZ      -2.8407     YZ      -1.2218     ZZ     -40.8159
+    Octopole Moments (Debye-Ang^2)
+       XXX     -13.3839    XXY     -22.9587    XYY      -1.0551
+       YYY      -0.0004    XXZ       5.1335    XYZ       5.6882
+       YYZ       1.2807    XZZ      -1.0614    YZZ      -1.0601
+       ZZZ      -1.6360
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX    -943.2706   XXXY     -37.9781   XXYY    -229.4027
+      XYYY       8.0931   YYYY    -242.8703   XXXZ     -29.3957
+      XXYZ      -8.1033   XYYZ      -5.8275   YYYZ      -3.8975
+      XXZZ    -203.2836   XYZZ       3.9489   YYZZ     -66.1110
+      XZZZ      -1.2491   YZZZ       0.3950   ZZZZ    -135.0883
+ -----------------------------------------------------------------
+ Total job time:  1528.04s(wall), 5597.11s(cpu) 
+ Fri Feb 28 20:10:37 2025
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

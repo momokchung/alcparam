@@ -1,0 +1,3 @@
+2025-03-01:11:39:11,564 INFO     [psi4.driver.task_planner:286] PLANNING Atomic:  keywords={'SCF_TYPE': 'DF', 'function_kwargs': {}}
+2025-03-01:11:39:11,570 INFO     [psi4.driver.driver:523] Compute energy(): method=sapt2+, basis=aug-cc-pvtz, molecule=dimer, nre=258.2586658478288
+2025-03-01:14:12:38,747 INFO     [psi4.driver.driver:526] Return energy(): -0.011182350372066083
