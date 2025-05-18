@@ -1,0 +1,879 @@
+parameters amoeba09
+$global
+keyfile interactions.key
+energy_unit kilocalories_per_mole
+bulk true
+$end
+
+#############
+# Monomer A #
+#############
+$system
+name ethanol_ethanol_A
+geometry ../Interactions_XYZ/monomerA/001_ethanol_ethanol_A.arc
+$end
+
+$system
+name ethanol_WA_A
+geometry ../Interactions_XYZ/monomerA/002_ethanol_WA_A.arc
+$end
+
+$system
+name ethanol_WD_A
+geometry ../Interactions_XYZ/monomerA/003_ethanol_WD_A.arc
+$end
+
+$system
+name ethanol_dimer_A
+geometry ../Interactions_XYZ/monomerA/004_ethanol_dimer_A.arc
+$end
+
+#############
+# Monomer B #
+#############
+$system
+name ethanol_ethanol_B
+geometry ../Interactions_XYZ/monomerB/001_ethanol_ethanol_B.arc
+$end
+
+$system
+name ethanol_WA_B
+geometry ../Interactions_XYZ/monomerB/002_ethanol_WA_B.arc
+$end
+
+$system
+name ethanol_WD_B
+geometry ../Interactions_XYZ/monomerB/003_ethanol_WD_B.arc
+$end
+
+$system
+name ethanol_dimer_B
+geometry ../Interactions_XYZ/monomerB/004_ethanol_dimer_B.arc
+$end
+
+#########
+# Dimer #
+#########
+$system
+name ethanol_ethanol
+geometry ../Interactions_XYZ/dimer/001_ethanol_ethanol.arc
+$end
+
+$system
+name ethanol_WA
+geometry ../Interactions_XYZ/dimer/002_ethanol_WA.arc
+$end
+
+$system
+name ethanol_WD
+geometry ../Interactions_XYZ/dimer/003_ethanol_WD.arc
+$end
+
+$system
+name ethanol_dimer
+geometry ../Interactions_XYZ/dimer/004_ethanol_dimer.arc
+$end
+
+###############
+# Interaction #
+###############
+
+#######################
+# 001_ethanol_ethanol #
+#######################
+
+$interaction
+name ethanol_ethanol_0_mp2
+index 0
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy 10.076
+weight 0.0
+$end
+
+$interaction
+name ethanol_ethanol_1_mp2
+index 1
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -3.681
+weight 0.25
+$end
+
+$interaction
+name ethanol_ethanol_2_mp2
+index 2
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -5.828
+weight 0.5
+$end
+
+$interaction
+name ethanol_ethanol_3_mp2
+index 3
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -6.571
+weight 1.0
+$end
+
+$interaction
+name ethanol_ethanol_4_mp2
+index 4
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -6.561
+weight 1.0
+$end
+
+$interaction
+name ethanol_ethanol_5_mp2
+index 5
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -6.172
+weight 1.0
+$end
+
+$interaction
+name ethanol_ethanol_6_mp2
+index 6
+equation ethanol_ethanol - ethanol_ethanol_A - ethanol_ethanol_B
+energy -5.002
+weight 1.0
+$end
+
+##################
+# 002_ethanol_WA #
+##################
+
+$interaction
+name ethanol_WA_0_mp2
+index 0
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy 8.599
+weight 0.0
+$end
+
+$interaction
+name ethanol_WA_1_mp2
+index 1
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -2.552
+weight 0.25
+$end
+
+$interaction
+name ethanol_WA_2_mp2
+index 2
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -4.173
+weight 0.5
+$end
+
+$interaction
+name ethanol_WA_3_mp2
+index 3
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -4.679
+weight 10.0
+$end
+
+$interaction
+name ethanol_WA_4_mp2
+index 4
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -4.615
+weight 1.0
+$end
+
+$interaction
+name ethanol_WA_5_mp2
+index 5
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -4.280
+weight 1.0
+$end
+
+$interaction
+name ethanol_WA_6_mp2
+index 6
+equation ethanol_WA - ethanol_WA_A - ethanol_WA_B
+energy -3.378
+weight 1.0
+$end
+
+##################
+# 003_ethanol_WD #
+##################
+
+$interaction
+name ethanol_WD_0_mp2
+index 0
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy 9.991
+weight 0.0
+$end
+
+$interaction
+name ethanol_WD_1_mp2
+index 1
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -3.433
+weight 0.25
+$end
+
+$interaction
+name ethanol_WD_2_mp2
+index 2
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -5.469
+weight 0.5
+$end
+
+$interaction
+name ethanol_WD_3_mp2
+index 3
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -6.138
+weight 10.0
+$end
+
+$interaction
+name ethanol_WD_4_mp2
+index 4
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -6.085
+weight 1.0
+$end
+
+$interaction
+name ethanol_WD_5_mp2
+index 5
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -5.679
+weight 1.0
+$end
+
+$interaction
+name ethanol_WD_6_mp2
+index 6
+equation ethanol_WD - ethanol_WD_A - ethanol_WD_B
+energy -4.531
+weight 1.0
+$end
+
+#####################
+# 004_ethanol_dimer #
+#####################
+
+$interaction
+name ethanol_dimer_0_mp2
+index 0
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.612
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_1_mp2
+index 1
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.323
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_2_mp2
+index 2
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.298
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_3_mp2
+index 3
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.181
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_4_mp2
+index 4
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.259
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_5_mp2
+index 5
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.286
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_6_mp2
+index 6
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.280
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_7_mp2
+index 7
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.981
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_8_mp2
+index 8
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.137
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_9_mp2
+index 9
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.084
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_10_mp2
+index 10
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.881
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_11_mp2
+index 11
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.594
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_12_mp2
+index 12
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.853
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_13_mp2
+index 13
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.036
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_14_mp2
+index 14
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.900
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_15_mp2
+index 15
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.810
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_16_mp2
+index 16
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.974
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_17_mp2
+index 17
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.814
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_18_mp2
+index 18
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.742
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_19_mp2
+index 19
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.760
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_20_mp2
+index 20
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.773
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_21_mp2
+index 21
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.599
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_22_mp2
+index 22
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.928
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_23_mp2
+index 23
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -6.102
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_24_mp2
+index 24
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -5.255
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_25_mp2
+index 25
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -3.052
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_26_mp2
+index 26
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -3.127
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_27_mp2
+index 27
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.412
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_28_mp2
+index 28
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.715
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_29_mp2
+index 29
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.581
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_30_mp2
+index 30
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.366
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_31_mp2
+index 31
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.474
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_32_mp2
+index 32
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.441
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_33_mp2
+index 33
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.251
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_34_mp2
+index 34
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.161
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_35_mp2
+index 35
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.155
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_36_mp2
+index 36
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.048
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_37_mp2
+index 37
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.075
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_38_mp2
+index 38
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.971
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_39_mp2
+index 39
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.905
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_40_mp2
+index 40
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.916
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_41_mp2
+index 41
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.933
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_42_mp2
+index 42
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.918
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_43_mp2
+index 43
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.043
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_44_mp2
+index 44
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.034
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_45_mp2
+index 45
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.967
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_46_mp2
+index 46
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.777
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_47_mp2
+index 47
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -2.001
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_48_mp2
+index 48
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.825
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_49_mp2
+index 49
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.796
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_50_mp2
+index 50
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.807
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_51_mp2
+index 51
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.735
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_52_mp2
+index 52
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.742
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_53_mp2
+index 53
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.730
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_54_mp2
+index 54
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.722
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_55_mp2
+index 55
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.685
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_56_mp2
+index 56
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.705
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_57_mp2
+index 57
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.686
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_58_mp2
+index 58
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.642
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_59_mp2
+index 59
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.677
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_60_mp2
+index 60
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.635
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_61_mp2
+index 61
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.792
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_62_mp2
+index 62
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.608
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_63_mp2
+index 63
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.781
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_64_mp2
+index 64
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.627
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_65_mp2
+index 65
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.510
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_66_mp2
+index 66
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.595
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_67_mp2
+index 67
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.432
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_68_mp2
+index 68
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.469
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_69_mp2
+index 69
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.369
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_70_mp2
+index 70
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.357
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_71_mp2
+index 71
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -0.957
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_72_mp2
+index 72
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -1.007
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_73_mp2
+index 73
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -0.949
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_74_mp2
+index 74
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -0.847
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_75_mp2
+index 75
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -0.760
+weight 1.0
+$end
+
+$interaction
+name ethanol_dimer_76_mp2
+index 76
+equation ethanol_dimer - ethanol_dimer_A - ethanol_dimer_B
+energy -0.737
+weight 1.0
+$end

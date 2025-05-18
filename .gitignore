@@ -1,1 +1,5 @@
 SCRIPTS/.ipynb_checkpoints
+ForceBalance/*/result
+ForceBalance/*/*.tmp
+ForceBalance/*/*.bak
+

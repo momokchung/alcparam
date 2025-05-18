@@ -1,0 +1,257 @@
+
+      ##############################
+      ##                          ##
+      ##  Force Field Definition  ##
+      ##                          ##
+      ##############################
+
+
+forcefield              AMOEBA-2009
+
+bond-cubic              -2.55
+bond-quartic            3.793125
+angle-cubic             -0.014
+angle-quartic           0.000056
+angle-pentic            -0.0000007
+angle-sextic            0.000000022
+opbendtype              ALLINGER
+opbend-cubic            -0.014
+opbend-quartic          0.000056
+opbend-pentic           -0.0000007
+opbend-sextic           0.000000022
+torsionunit             0.5
+vdwtype                 BUFFERED-14-7
+radiusrule              CUBIC-MEAN
+radiustype              R-MIN
+radiussize              DIAMETER
+epsilonrule             HHG
+dielectric              1.0
+polarization            MUTUAL
+vdw-12-scale            0.0
+vdw-13-scale            0.0
+vdw-14-scale            1.0
+vdw-15-scale            1.0
+mpole-12-scale          0.0
+mpole-13-scale          0.0
+mpole-14-scale          0.4
+mpole-15-scale          0.8
+polar-12-scale          0.0
+polar-13-scale          0.0
+polar-14-scale          1.0
+polar-15-scale          1.0
+polar-12-intra          0.0
+polar-13-intra          0.0
+polar-14-intra          0.5
+polar-15-intra          1.0
+direct-11-scale         0.0
+direct-12-scale         1.0
+direct-13-scale         1.0
+direct-14-scale         1.0
+mutual-11-scale         1.0
+mutual-12-scale         1.0
+mutual-13-scale         1.0
+mutual-14-scale         1.0
+
+
+      #############################
+      ##                         ##
+      ##  Literature References  ##
+      ##                         ##
+      #############################
+
+
+P. Ren, C. Wu and J. W. Ponder, "Polarizable Atomic Multipole-based
+Molecular Mechanics for Organic Molecules", J. Chem. Theory Comput.,
+7, 3143-3161 (2011)
+
+J. W. Ponder and D. A. Case, "Force Fields for Protein Simulation",
+Adv. Prot. Chem., 66, 27-85 (2003)
+
+P. Ren and J. W. Ponder, "Polarizable Atomic Multipole Water Model for
+Molecular Mechanics Simulation", J. Phys. Chem. B, 107, 5933-5947 (2003)
+
+P. Ren and J. W. Ponder, "A Consistent Treatment of Inter- and
+Intramolecular Polarization in Molecular Mechanics Calculations",
+J. Comput. Chem., 23, 1497-1506 (2002)
+
+Monovalent ion parameters taken from Zhi Wang, Ph.D. thesis, Department
+of Chemistry, Washington University in St. Louis, May 2018; available
+from https://dasher.wustl.edu/ponder/
+
+
+      #############################
+      ##                         ##
+      ##  Atom Type Definitions  ##
+      ##                         ##
+      #############################
+
+
+atom         39   37    O     "Water O"                      8    15.999    2
+atom         40   38    H     "Water H"                      1     1.008    1
+atom         45   39    O     "Ethanol O"                    8    15.999    2
+atom         46   40    H     "Ethanol HO"                   1     1.008    1
+atom         47   43    C     "Ethanol CH2"                  6    12.011    4
+atom         48   42    H     "Ethanol H2C"                  1     1.008    1
+atom         49   43    C     "Ethanol CH3"                  6    12.011    4
+atom         50   44    H     "Ethanol H3C"                  1     1.008    1
+
+
+      ################################
+      ##                            ##
+      ##  Van der Waals Parameters  ##
+      ##                            ##
+      ################################
+
+
+vdw          37               3.4050     0.1100
+vdw          38               2.6550     0.0135      0.910
+vdw          39               3.4050     0.1100                # PRM 2 3
+vdw          40               2.6550     0.0135      0.910     
+vdw          42               2.8700     0.0240      0.910     
+vdw          43               3.8200     0.1010                # PRM 2 3
+vdw          44               2.9600     0.0240      0.920     
+
+
+      ##################################
+      ##                              ##
+      ##  Bond Stretching Parameters  ##
+      ##                              ##
+      ##################################
+
+
+bond         37   38          556.85     0.9572
+bond         39   40          615.90     0.9670
+bond         39   43          465.10     1.4130
+bond         42   43          385.00     1.1120
+bond         43   43          453.00     1.5247
+bond         43   44          385.00     1.1120
+
+
+      ################################
+      ##                            ##
+      ##  Angle Bending Parameters  ##
+      ##                            ##
+      ################################
+
+
+angle        38   37   38      48.70     108.50
+angle        40   39   43      64.96     106.80
+angle        43   39   43      88.50     106.00
+angle        39   43   42      60.99     110.00     108.90     108.70
+angle        39   43   43      65.71     107.50     107.00     107.90
+angle        42   43   42      40.57     107.60     107.80     109.47
+angle        42   43   43      45.44     109.80     109.31     110.70
+angle        43   43   43      48.20     109.50     110.20     111.00
+angle        43   43   44      45.44     109.80     109.31     110.70
+angle        44   43   44      40.57     107.60     107.80     109.47
+
+
+      ################################
+      ##                            ##
+      ##   Stretch-Bend Parameters  ##
+      ##                            ##
+      ################################
+
+
+strbnd       40   39   43      -4.50      38.00
+strbnd       43   39   43      38.00      38.00
+strbnd       39   43   43      38.00      38.00
+strbnd       39   43   44      11.50      11.50
+strbnd       42   43   39      -4.50      38.00
+strbnd       42   43   43      -4.50      38.00
+strbnd       43   43   43      18.70      18.70
+strbnd       43   43   44      38.00      -4.50
+
+
+      ################################
+      ##                            ##
+      ##   Urey-Bradley Parameters  ##
+      ##                            ##
+      ################################
+
+
+ureybrad     38   37   38      -7.60     1.5537
+
+
+      ############################
+      ##                        ##
+      ##  Torsional Parameters  ##
+      ##                        ##
+      ############################
+
+
+torsion      40   39   43   42      0.000 0.0 1   0.000 180.0 2   0.274 0.0 3
+torsion      40   39   43   43     -1.447 0.0 1   0.531 180.0 2   0.317 0.0 3
+torsion      39   43   43   43     -1.150 0.0 1   0.000 180.0 2   1.280 0.0 3
+torsion      39   43   43   44      0.000 0.0 1   0.000 180.0 2   0.300 0.0 3
+torsion      42   43   43   43      0.000 0.0 1   0.000 180.0 2   0.280 0.0 3
+torsion      42   43   43   44      0.000 0.0 1   0.000 180.0 2   0.424 0.0 3
+torsion      43   43   43   43      0.185 0.0 1   0.170 180.0 2   0.520 0.0 3
+torsion      43   43   43   44      0.000 0.0 1   0.000 180.0 2   0.280 0.0 3
+torsion      44   43   43   44      0.000 0.0 1   0.000 180.0 2   0.299 0.0 3
+
+
+      ###################################
+      ##                               ##
+      ##  Atomic Multipole Parameters  ##
+      ##                               ##
+      ###################################
+
+
+multipole    39  -40  -40              -0.51966
+                                        0.00000    0.00000    0.14279
+                                        0.37928
+                                        0.00000   -0.41809
+                                        0.00000    0.00000    0.03881
+multipole    40   39   40               0.25983
+                                       -0.03859    0.00000   -0.05818
+                                       -0.03673
+                                        0.00000   -0.10739
+                                       -0.00203    0.00000    0.14412
+multipole    45   46   47              -0.50793                           # PRM 4
+                                        0.30397    0.00000    0.07443     
+                                        0.21785                           
+                                        0.00000   -0.54387                
+                                       -0.22371    0.00000    0.32602     
+multipole    46   45   47               0.24956                           
+                                       -0.04674    0.00000    0.00000     
+                                       -0.04536                           
+                                        0.00000   -0.09867                
+                                       -0.01950    0.00000    0.14403     
+multipole    47   45   49               0.14897                           # PRM 4
+                                        0.07697    0.00000    0.46667     
+                                       -0.22387                           
+                                        0.00000   -0.51710                
+                                       -0.34700    0.00000    0.74097     
+multipole    48   47   45               0.03392                           
+                                       -0.01463    0.00000   -0.07700     
+                                       -0.00706                           
+                                        0.00000   -0.01579                
+                                       -0.02154    0.00000    0.02285     
+multipole    49   47   50              -0.17399                           EVAL 4 -0.53295-(PRM["MCHARGE/45.46.47"]+PRM["MCHARGE/47.45.49"])
+                                        0.00000    0.00000    0.32694     
+                                       -0.23348                           
+                                        0.00000   -0.31115                
+                                       -0.04183    0.00000    0.54463     
+multipole    50   49   47               0.07185                           
+                                        0.00000    0.00000   -0.07829     
+                                       -0.02252                           
+                                        0.00000   -0.03344                
+                                        0.01606    0.00000    0.05596     
+
+
+      ########################################
+      ##                                    ##
+      ##  Dipole Polarizability Parameters  ##
+      ##                                    ##
+      ########################################
+
+
+polarize     39          0.8370     0.3900     40
+polarize     40          0.4960     0.3900     39
+polarize     45          0.8340     0.3900     46   47   51     # PRM 2
+polarize     46          0.4960     0.3900     45               
+polarize     47          1.3340     0.3900     45   48          # PRM 2
+polarize     48          0.4960     0.3900     47               
+polarize     49          1.3340     0.3900     50               # PRM 2
+polarize     50          0.4960     0.3900     49               
