@@ -1,0 +1,48 @@
+#==========================================#
+#| File containing multipole moments from |#
+#|      experiment/QM for ForceBalance    |#
+#|                                        |#
+#| Octothorpes are comments               |#
+#| This file should be formatted like so: |#
+#| (Full XYZ file for the molecule)       |#
+#| Number of atoms                        |#
+#| Comment line                           |#
+#| a1 x1 y1 z1 (xyz for atom 1)           |#
+#| a2 x2 y2 z2 (xyz for atom 2)           |#
+#|                                        |#
+#| These coords will be actually used     |#
+#|                                        |#
+#| (Followed by multipole moments)        |#
+#| dipole, in Debye                       |#
+#| dx dy dz                               |#
+#| (Empty line is optional)               |#
+#| quadrupole, in Buckingham              |#
+#| qxx                                    |#
+#| qxy qyy                                |#
+#| qxz qyz qzz                            |#
+#==========================================#
+
+9
+Ethanol
+C      1.251923    0.251504    0.000000
+C     -0.003695   -0.576372   -0.000000
+O     -1.107813    0.322263    0.000000
+H     -1.918012   -0.192310   -0.000000
+H      2.128720   -0.391164   -0.000000
+H      1.283130    0.885095    0.881733
+H      1.283130    0.885095   -0.881733
+H     -0.033606   -1.215335    0.883744
+H     -0.033606   -1.215335   -0.883744
+
+dipole
+-0.007       -1.612        0.000
+
+quadrupole
+ 1.909        2.024        0.000
+ 2.024       -1.102        0.000
+ 0.000        0.000       -0.807
+
+polarizability
+5.3755       0.0546       0.0000
+0.0546       4.7893       0.0000
+0.0000       0.0000       4.4570

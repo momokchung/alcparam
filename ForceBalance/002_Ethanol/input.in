@@ -12,10 +12,11 @@ ffdir forcefield
 penalty_type L2
 
 # (allcap) The job type, defaults to a single-point evaluation of objective function
-jobtype newton
+jobtype single
 
 # Path to TINKER
 tinkerpath /home/kchung25/tinker/bin
+tinker9path /home/kchung25/tinker9Zhi/build-cuda
 
 # (list) The names of force fields, corresponding to directory forcefields/file_name.(itp|gen)
 forcefield amoeba09.prm
@@ -53,33 +54,90 @@ normalize_weights 1
 amoeba_pol mutual
 amoeba_eps 1e-5
 
-backup false
+#backup true
+#writechk_step
+#writechk optmize_chkpoint
+#readchk optmize_chkpoint
+verbose_options true
+print_gradient
 $end
 
 $target
-name Interactions_MP2
-type BindingEnergy_TINKER
-weight 3.0
-energy_denom 1.0
+# (string) The name of the target, which corresponds to the directory targets/dir_name
+name Liquid30
+
+# (allcap) The type of target, for instance AbInitio_GMXX2
+type Liquid_TINKER
+
+# (float) Weight of the current target (with respect to other targets)
+weight 5.0
+
+w_rho 1.0
+w_hvap 1.0
+w_alpha 0.0
+w_kappa 0.0
+w_cp 0.0
+w_eps0 1.0
+
+gas_eq_steps 500000
+gas_md_steps 5000000
+gas_timestep 0.1
+gas_interval 0.1
+
+liquid_eq_steps 200000
+liquid_md_steps 5000000
+liquid_timestep 2.0
+liquid_interval 0.1
 $end
 
-$target
-name Interactions_ALMO_ELE
-type BindingEnergy_TINKER
-weight 0.5
-energy_denom 5.0
-$end
+# $target
+# name Interactions_MP2
+# type BindingEnergy_TINKER
+# weight 3.0
+# energy_denom 1.0
+# $end
+# 
+# $target
+# name Interactions_ALMO_ELE
+# type BindingEnergy_TINKER
+# weight 0.5
+# energy_denom 5.0
+# $end
+# 
+# $target
+# name Interactions_ALMO_VDW
+# type BindingEnergy_TINKER
+# weight 0.5
+# energy_denom 5.0
+# $end
+# 
+# $target
+# name Interactions_ALMO_POL
+# type BindingEnergy_TINKER
+# weight 0.5
+# energy_denom 5.0
+# $end
 
-$target
-name Interactions_ALMO_VDW
-type BindingEnergy_TINKER
-weight 0.5
-energy_denom 5.0
-$end
-
-$target
-name Interactions_ALMO_POL
-type BindingEnergy_TINKER
-weight 0.5
-energy_denom 5.0
-$end
+# $target
+# name Monomer_Moments
+# type Moments_TINKER
+# weight 1.0
+# optimize_geometry no
+# dipole_denom 0.2
+# quadrupole_denom 0.8
+# polarizability_denom 0.8
+# $end
+# 
+# $target
+# name Monomer_Vibration
+# type Vibration_TINKER
+# weight 1.0
+# wavenumber_tol 30.0
+# $end
+# 
+# $target
+# name Monomer_Potential
+# type Potential_TINKER
+# weight 1.0
+# potential_denom 0.6
+# $end
