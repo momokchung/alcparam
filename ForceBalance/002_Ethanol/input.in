@@ -49,8 +49,8 @@ normalize_weights 1
 amoeba_pol mutual
 amoeba_eps 1e-5
 
-asynchronous
-wq_port 9000
+# asynchronous
+# wq_port 9000
 
 # backup true
 # writechk_step
