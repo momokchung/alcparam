@@ -12,7 +12,7 @@ ffdir forcefield
 penalty_type L2
 
 # (allcap) The job type, defaults to a single-point evaluation of objective function
-jobtype single
+jobtype newton
 
 # Path to TINKER
 tinkerpath /home/kchung25/tinker/bin
@@ -22,57 +22,54 @@ tinker9path /home/kchung25/tinker9Zhi/build-cuda
 forcefield amoeba09.prm
 
 # (int) Maximum number of steps in an optimization
-maxstep 10
+maxstep 100
 
 # (float) Convergence criterion of step size (just needs to fall below this threshold)
-convergence_step 0.0001
+convergence_step 0.0000000000000000001
 
 # (float) Convergence criterion of objective function (in MainOptimizer this is the stdev of x2 over 10 steps)
 convergence_objective 0.0001
 
 # (float) Convergence criterion of gradient norm
-convergence_gradient 0.001
-
-criteria 1
-
-# (float) Minimum eigenvalue for applying steepest descent correction in the MainOptimizer
-eig_lowerbound 0.0001
+convergence_gradient 0.0001
 
 # (float) Step size for finite difference derivatives in many functions (get_(G/H) in fitsim, FDCheckG)
 finite_difference_h 0.001
 
 # (float) Factor for multiplicative penalty function in objective function
-penalty_additive 0.0
+penalty_additive 0.1
 
-trust0 0.05
-mintrust 0.0
-error_tolerance 0.0
-adaptive_factor 0.25
-adaptive_damping 0.5
+trust0 0.01
+mintrust 0.001
+error_tolerance 10.0
+adaptive_factor 0.1
+adaptive_damping 1.0
 normalize_weights 1
 
 amoeba_pol mutual
 amoeba_eps 1e-5
 
-#backup true
-#writechk_step
-#writechk optmize_chkpoint
-#readchk optmize_chkpoint
+asynchronous
+wq_port 9000
+
+# backup true
+# writechk_step
+# writechk optmize_chkpoint
+# readchk optmize_chkpoint
 verbose_options true
-print_gradient
 $end
 
 $target
 # (string) The name of the target, which corresponds to the directory targets/dir_name
-name Liquid30
+name Liquid25
 
 # (allcap) The type of target, for instance AbInitio_GMXX2
 type Liquid_TINKER
 
 # (float) Weight of the current target (with respect to other targets)
-weight 5.0
+weight 10.0
 
-w_rho 1.0
+w_rho 3.0
 w_hvap 1.0
 w_alpha 0.0
 w_kappa 0.0
@@ -85,59 +82,68 @@ gas_timestep 0.1
 gas_interval 0.1
 
 liquid_eq_steps 200000
-liquid_md_steps 5000000
+liquid_md_steps 10000000
 liquid_timestep 2.0
 liquid_interval 0.1
+
+all_at_once
+$end
+
+$target
+remote
+name Interactions_MP2
+type BindingEnergy_TINKER
+weight 3.0
+energy_denom 1.0
+$end
+
+$target
+remote
+name Interactions_ALMO_ELE
+type BindingEnergy_TINKER
+weight 0.5
+energy_denom 5.0
+$end
+
+$target
+remote
+name Interactions_ALMO_VDW
+type BindingEnergy_TINKER
+weight 0.5
+energy_denom 5.0
+$end
+
+$target
+remote
+name Interactions_ALMO_POL
+type BindingEnergy_TINKER
+weight 0.5
+energy_denom 5.0
+$end
+
+$target
+remote
+name Monomer_Moments
+type Moments_TINKER
+weight 1.0
+optimize_geometry no
+dipole_denom 0.2
+quadrupole_denom 0.8
+polarizability_denom 0.5
+$end
+
+$target
+remote
+name Monomer_Potential
+type Potential_TINKER
+weight 1.0
+potential_denom 0.5
 $end
 
 # $target
-# name Interactions_MP2
-# type BindingEnergy_TINKER
-# weight 3.0
-# energy_denom 1.0
-# $end
-# 
-# $target
-# name Interactions_ALMO_ELE
-# type BindingEnergy_TINKER
-# weight 0.5
-# energy_denom 5.0
-# $end
-# 
-# $target
-# name Interactions_ALMO_VDW
-# type BindingEnergy_TINKER
-# weight 0.5
-# energy_denom 5.0
-# $end
-# 
-# $target
-# name Interactions_ALMO_POL
-# type BindingEnergy_TINKER
-# weight 0.5
-# energy_denom 5.0
-# $end
-
-# $target
-# name Monomer_Moments
-# type Moments_TINKER
-# weight 1.0
-# optimize_geometry no
-# dipole_denom 0.2
-# quadrupole_denom 0.8
-# polarizability_denom 0.8
-# $end
-# 
-# $target
+# remote
 # name Monomer_Vibration
 # type Vibration_TINKER
 # weight 1.0
 # wavenumber_tol 30.0
-# $end
-# 
-# $target
-# name Monomer_Potential
-# type Potential_TINKER
-# weight 1.0
-# potential_denom 0.6
 # $end

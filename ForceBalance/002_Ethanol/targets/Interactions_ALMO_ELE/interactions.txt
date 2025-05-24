@@ -10,22 +10,22 @@ $end
 #############
 $system
 name ethanol_ethanol_A
-geometry ../Interactions_XYZ/monomerA/001_ethanol_ethanol_A.arc
+geometry Interactions_XYZ/monomerA/001_ethanol_ethanol_A.arc
 $end
 
 $system
 name ethanol_WA_A
-geometry ../Interactions_XYZ/monomerA/002_ethanol_WA_A.arc
+geometry Interactions_XYZ/monomerA/002_ethanol_WA_A.arc
 $end
 
 $system
 name ethanol_WD_A
-geometry ../Interactions_XYZ/monomerA/003_ethanol_WD_A.arc
+geometry Interactions_XYZ/monomerA/003_ethanol_WD_A.arc
 $end
 
 $system
 name ethanol_dimer_A
-geometry ../Interactions_XYZ/monomerA/004_ethanol_dimer_A.arc
+geometry Interactions_XYZ/monomerA/004_ethanol_dimer_A.arc
 $end
 
 #############
@@ -33,22 +33,22 @@ $end
 #############
 $system
 name ethanol_ethanol_B
-geometry ../Interactions_XYZ/monomerB/001_ethanol_ethanol_B.arc
+geometry Interactions_XYZ/monomerB/001_ethanol_ethanol_B.arc
 $end
 
 $system
 name ethanol_WA_B
-geometry ../Interactions_XYZ/monomerB/002_ethanol_WA_B.arc
+geometry Interactions_XYZ/monomerB/002_ethanol_WA_B.arc
 $end
 
 $system
 name ethanol_WD_B
-geometry ../Interactions_XYZ/monomerB/003_ethanol_WD_B.arc
+geometry Interactions_XYZ/monomerB/003_ethanol_WD_B.arc
 $end
 
 $system
 name ethanol_dimer_B
-geometry ../Interactions_XYZ/monomerB/004_ethanol_dimer_B.arc
+geometry Interactions_XYZ/monomerB/004_ethanol_dimer_B.arc
 $end
 
 #########
@@ -56,22 +56,22 @@ $end
 #########
 $system
 name ethanol_ethanol
-geometry ../Interactions_XYZ/dimer/001_ethanol_ethanol.arc
+geometry Interactions_XYZ/dimer/001_ethanol_ethanol.arc
 $end
 
 $system
 name ethanol_WA
-geometry ../Interactions_XYZ/dimer/002_ethanol_WA.arc
+geometry Interactions_XYZ/dimer/002_ethanol_WA.arc
 $end
 
 $system
 name ethanol_WD
-geometry ../Interactions_XYZ/dimer/003_ethanol_WD.arc
+geometry Interactions_XYZ/dimer/003_ethanol_WD.arc
 $end
 
 $system
 name ethanol_dimer
-geometry ../Interactions_XYZ/dimer/004_ethanol_dimer.arc
+geometry Interactions_XYZ/dimer/004_ethanol_dimer.arc
 $end
 
 ###############
