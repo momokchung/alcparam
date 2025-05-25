@@ -2,4 +2,6 @@ SCRIPTS/.ipynb_checkpoints
 ForceBalance/*/result
 ForceBalance/*/*.tmp
 ForceBalance/*/*.bak
-
+ForceBalance/*/*.out
+ForceBalance/*/*.sav
+ForceBalance/*/optmize_chkpoint
